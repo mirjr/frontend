@@ -1,0 +1,2 @@
+- [22. Class](./javascript/22-class/index.md)
+- [23. OOP](./javascript/23-oop/index.md)
