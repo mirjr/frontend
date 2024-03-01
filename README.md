@@ -57,4 +57,4 @@
 - [21. Iterables nima?](./javascript/21-iterables/index.md)
 - [22. Class nima?](./javascript/22-class/index.md)
 - [23. OOP & uning prinsplari](./javascript/23-oop/index.md)
-- [23. Functional programming](./javascript/24-functional-programming/index.md)
+- [24. Functional programming](./javascript/24-functional-programming/index.md)
