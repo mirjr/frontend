@@ -120,3 +120,21 @@
     showSum(sum(2, 3));
     showSum(5);
     ```
+
+11. **IIFE** - _Immediatlty Invoked Function Expression_ e'lon qilingan zahoti ishlaydigan funksiya. Ko'proq `global scope`-da kod yozishdan qochish uchun ishlatiladi.
+
+    ```javascript
+    (function () {
+      console.log("I am in a scope");
+    })();
+    ```
+
+    ```javascript
+    const sum = ((_) => {
+      let limit = 0;
+      return (num1, num2) => {
+        limit++;
+        !(limit % 4) ? "I'm tired" : num1 + num2;
+      };
+    })();
+    ```
