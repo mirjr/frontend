@@ -58,3 +58,4 @@
 - [22. Class nima?](./javascript/22-class/index.md)
 - [23. OOP & uning prinsplari](./javascript/23-oop/index.md)
 - [24. Functional programming](./javascript/24-functional-programming/index.md)
+- [24. Execution Context](./javascript/25-execution-context/index.md)

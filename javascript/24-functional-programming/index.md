@@ -1,8 +1,10 @@
 # Functional programming
 
-**Functional programming** - bu `declarative programmming paradimn`-lar sinfiga mansub bo'lib, dasturni `pure` funksiyalarga bo'lishorqali tuzishni ilgari suradi. Bu orqali kod tushunarli, boshqarishga oson, qayta ishlatsa bo'ladigan va testlashga oson bo'ladi. Functional programming-ning quyidagi konseptlari mavjud: `immutability`, `pure dunctions`, `higher order functions`, `first-class functions`, `currying`, `recursion`, `composition`, `refercial transparency` va boshqalar.
+👉 _[Mavzuga oid havola](https://blog.stackademic.com/understand-javascript-composition-once-and-for-all-96e69ebee4bd)_
 
-1. **Immutability** - bu dasturdagi `data(object, array...)`-larni o'zgartirmasdan ishlash. Bunda `Array`-lar bilan ishlaganda `mutable` obyektlardan iloji boricha qochiladi. Masalan:
+**Functional programming** - bu `declarative programmming paradimn`-lar sinfiga mansub bo'lib, dasturni `pure` funksiyalarga bo'lish orqali tuzishni ilgari suradi. Bu orqali kod tushunarli, boshqarishga oson, qayta ishlatsa bo'ladigan va testlashga oson bo'ladi. _Functional programming_-ning quyidagi konseptlari mavjud: `immutability`, `pure functions`, `higher order functions`, `first-class functions`, `currying`, `recursion`, `composition`, `refercial transparency` va boshqalar.
+
+1. **Immutability** - bu dasturdagi `data (object, array...)`-larni o'zgartirmasdan ishlash. Bunda `Array`-lar bilan ishlaganda `mutable` obyektlardan iloji boricha qochiladi. Masalan:
 
    ```javascript
    const numbers = [1, 2, 3, 4];
@@ -93,7 +95,24 @@
    myFunc(() => console.log("Callback function"));
    ```
 
-8. **Function Composition** - bir `data` ustida natijaga yetguncha, funksiyalar ketma-ketlikda `Callback` va `Currying` uslubidan foydalanib ishlashiga aytiladi.
+8. **Function Composition** - bir `data` ustida natijaga yetguncha, funksiyalar ketma-ketligida `Callback` va `Currying` uslubidan foydalanib ishlashiga aytiladi.
+
+   ```javascript
+   // Bread Slicing Function
+   const sliceBread = (bread) => `${bread} is sliced`;
+
+   // Spreading Function
+   const spreadButter = (bread) => `Butter spread on ${bread}`;
+
+   // Filling Function
+   const addFilling = (bread) => `Filling added to ${bread}`;
+
+   // Composing Functions to make a Sandwich
+   const makeSandwich = (bread) => addFilling(spreadButter(sliceBread(bread)));
+
+   console.log(makeSandwich("Whole Wheat"));
+   // Outputs: "Filling added to Butter spread on Whole Wheat is sliced"
+   ```
 
 9. **Pipe function** - `Function Composition` bilan deyarli bir xil, faqat ustunligi berilgan funksiyalar ketma-ketlikda ishlaydi.
 
@@ -121,7 +140,7 @@
     showSum(5);
     ```
 
-11. **IIFE** - _Immediatlty Invoked Function Expression_ e'lon qilingan zahoti ishlaydigan funksiya. Ko'proq `global scope`-da kod yozishdan qochish uchun ishlatiladi.
+11. **IIFE** - _Immediatlty Invoked Function Expression_ e'lon qilingan zahoti ishlaydigan funksiya. Ko'proq _global scope_-da kod yozishdan qochish uchun ishlatiladi.
 
     ```javascript
     (function () {
