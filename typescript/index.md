@@ -53,7 +53,7 @@ function add(a: number | string, b: number | string) {
 }
 ```
 
-# 4. `optional props` nima?
+# 5. `optional props` nima?
 
 ```typescript
 type User = {
@@ -67,7 +67,7 @@ let user2: Required<User>;
 user2 = { name: "Vali", age: 22 };
 ```
 
-# 5. `enum` nima?
+# 6. `enum` nima?
 
 An enum is a special "class" that represents a group of constants (unchangeable variables).
 
@@ -99,7 +99,7 @@ console.log(currentDirection);
 currentDirection = "North"; // Error: "North" is not assignable to type 'CardinalDirections'.
 ```
 
-# 6. `abstract` class nima?
+# 7. `abstract` class nima?
 
 An abstract class is typically used to define common behaviors for derived classes to extend. Unlike a regular class, an abstract class cannot be instantiated directly.
 
@@ -144,7 +144,7 @@ console.log(jane.compensationStatement());
 // Jane Doe makes 16000 a month.
 ```
 
-# 7. `function overload` nima?
+# 8. `function overload` nima?
 
 ```typescript
 function add(a: number, b: number): number;
@@ -167,5 +167,3 @@ console.log(add(23, " World"));
 TypeScript provides three types of access modifiers: `public`, `private`, and `protected`. Members (properties and methods) of the TypeScript class are public by default, therefore you don't need to precede members with the public keyword.
 
 ![access modifiers in typescript](https://cdn-images-1.medium.com/v2/resize:fit:2280/1*iKmqnZARLRh1tHwTHKJWFw.png)
-
-# 8. `union` type nima?
