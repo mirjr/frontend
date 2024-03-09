@@ -60,3 +60,7 @@
 - [24. Functional programming](./javascript/24-functional-programming/index.md)
 - [24. Execution Context](./javascript/25-execution-context/index.md)
 - [24. JavaScritp Moduls](./javascript/26-moduls/index.md)
+
+> **TypeScript**
+
+- [TypeScript savollar](./typescript/index.md)
