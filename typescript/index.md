@@ -162,7 +162,7 @@ console.log(add("Hello ", 22));
 console.log(add(23, " World"));
 ```
 
-# 7. `access modifiers` nima?
+# 9. `access modifiers` nima?
 
 TypeScript provides three types of access modifiers: `public`, `private`, and `protected`. Members (properties and methods) of the TypeScript class are public by default, therefore you don't need to precede members with the public keyword.
 
