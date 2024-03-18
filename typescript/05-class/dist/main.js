@@ -56,3 +56,73 @@ class Person {
         return `You are ${this.age} years old`;
     }
 }
+class Cal {
+    constructor(x, y, admin, userName) {
+        this.x = x;
+        this.y = y;
+        this.admin = admin;
+        this.name = "";
+        this.x = x;
+        this.y = y;
+        this.admin = admin;
+        this.name = userName;
+    }
+    sum() {
+        return this.x + this.y;
+    }
+}
+class CalTwo extends Cal {
+    constructor(x, y, admin, name) {
+        super(x, y, admin, name);
+    }
+    testMet() {
+        return this.admin;
+    }
+}
+let calObj = new Cal(15, 20, true, "Vali");
+let calObj2 = new CalTwo(10, 10, false, "Halim");
+class ModuleMenuItem {
+    constructor() {
+        this.name = "";
+    }
+    getName() {
+        return this.name;
+    }
+    setName(newName) {
+        this.name = newName;
+    }
+}
+let modul_1 = new ModuleMenuItem();
+modul_1.setName("Vali");
+class Odam {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+}
+class User extends Odam {
+    constructor(name, age, role) {
+        super(name, age);
+        this.role = role;
+    }
+    setRole(newRole) {
+        return (this.role = newRole);
+    }
+    getFullInfo() {
+        return `My name is ${this.name}, I'm ${this.age} years old, I'm an ${this.role}`;
+    }
+}
+class Admin extends Odam {
+    constructor(name, age, role) {
+        super(name, age);
+        this.role = role;
+    }
+    setRole(newRole) {
+        return (this.role = newRole);
+    }
+    getFullInfo() {
+        return `My name is ${this.name}, I'm ${this.age} years old, I'm an ${this.role}`;
+    }
+}
+let user = new User("Ali", 25, "user");
+let admin = new Admin("Vali", 30, "admin");

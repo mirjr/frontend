@@ -100,3 +100,9 @@ function fn(a) {
 var neverOccur = function () {
     throw new Error("Never!");
 };
+var userRoles = ["admin", "user"];
+userRoles.push("admin");
+userRoles.push("admin");
+userRoles.push("admin");
+userRoles.push("admin");
+console.log(userRoles);
