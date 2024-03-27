@@ -185,3 +185,15 @@ class Admin extends Odam {
 
 let user = new User("Ali", 25, "user");
 let admin = new Admin("Vali", 30, "admin");
+
+interface Bla {
+	readonly name: string;
+	age: number;
+	email: string;
+}
+
+let bla: Bla = { name: "", age: 4, email: "" };
+// let bla: Readonly<Bla> = { name: "", age: 4, email: "" };
+// bla.age = 5; //error
+
+bla.age = 5;
